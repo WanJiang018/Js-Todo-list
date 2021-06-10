@@ -1,0 +1,56 @@
+.tab-list {
+  position: relative;
+
+  &::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
+.tab-list-item {
+  float: left;
+  width: 33.333%;
+  text-align: center;
+
+  &:first-child.active ~ .tab-list-slider {
+    left: 0;
+  }
+
+  &:nth-child(2).active ~ .tab-list-slider {
+    left: 33.333%;
+  }
+
+  &:nth-child(3).active ~ .tab-list-slider {
+    left: calc(33.333% * 2);
+  }
+}
+
+.tab-list-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 33.333%;
+  height: 2px;
+  background-color: $dark;
+  transition: left 0.25s;
+}
+
+.tab {
+	>a {
+		display: block;
+		color: $gray;
+		transition: color 0.15s;
+	}
+	&:hover {
+		>a {
+			color: $dark;
+		}
+	}
+}
+
+.tab.active {
+	>a {
+		color: $dark;
+	}
+}

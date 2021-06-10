@@ -1,0 +1,37 @@
+.form-check {
+  display: none;
+  border: 1px solid $dark;
+  border-radius: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.form-check + label:before {
+  content: '\2714';
+  display: inline-block;
+  vertical-align: bottom;
+  color: transparent;
+  transition: 0.2s;
+  margin-right: 16px;
+}
+
+.form-check + label:active:before {
+  transform: scale(0);
+}
+
+.form-check:checked + label:before {
+  border-color: transparent;
+  color: #ffd370;
+}
+.form-check:checked + label {
+  text-decoration: line-through;
+  color: rgba($dark, 0.3);
+}
+
+.form-check,
+.form-check + label:before {
+  border: 1px solid $dark;
+  border-radius: 5px;
+  width: 16px;
+  height: 16px;
+}

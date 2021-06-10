@@ -1,0 +1,18 @@
+.btn-add {
+  width: 40px;
+  height: 40px;
+  font-size: 32px;
+  color: #ffffff;
+  background: $dark;
+  border-radius: 10px;
+
+  &:hover {
+    background: $gray;
+  }
+}
+
+.btn-input-submit {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}

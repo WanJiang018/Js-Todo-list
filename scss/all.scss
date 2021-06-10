@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700&display=swap');
+
+@import './helpers/variable';
+@import './helpers/mixin';
+@import './helpers/reset';
+@import './helpers/utilities';
+
+@import './layout/layout';
+
+@import './components/block';
+@import './components/button';
+@import './components/checkbox';
+@import './components/list';
+@import './components/tab-list';
